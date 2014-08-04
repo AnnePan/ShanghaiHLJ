@@ -19,6 +19,20 @@
 		24219D4C198BBCFF005461AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24219D34198BBCFF005461AE /* UIKit.framework */; };
 		24219D54198BBCFF005461AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24219D52198BBCFF005461AE /* InfoPlist.strings */; };
 		24219D56198BBCFF005461AE /* ShanghaiHLJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D55198BBCFF005461AE /* ShanghaiHLJTests.m */; };
+		24219D63198BBE38005461AE /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D61198BBE38005461AE /* UIView+Additions.m */; };
+		24219D6B198BBF37005461AE /* PJFirstPageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D6A198BBF37005461AE /* PJFirstPageVc.m */; };
+		24219D6E198BBF58005461AE /* PJOrdersVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D6D198BBF58005461AE /* PJOrdersVc.m */; };
+		24219D71198BBFF5005461AE /* PJMineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D70198BBFF5005461AE /* PJMineVc.m */; };
+		24219D73198BC19B005461AE /* home_tab_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24219D72198BC19B005461AE /* home_tab_home@2x.png */; };
+		24219D75198BC1B8005461AE /* home_tab_contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24219D74198BC1B8005461AE /* home_tab_contact@2x.png */; };
+		24219D77198BC1CD005461AE /* home_tab_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24219D76198BC1CD005461AE /* home_tab_profile@2x.png */; };
+		24219D7A198BC4CA005461AE /* PJAppointmentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D79198BC4CA005461AE /* PJAppointmentVc.m */; };
+		24219D7D198BC592005461AE /* PJShowListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D7C198BC592005461AE /* PJShowListVc.m */; };
+		24219D81198BC8F9005461AE /* PJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D80198BC8F9005461AE /* PJBaseViewController.m */; };
+		24219D84198BCB86005461AE /* PJSelectCityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D83198BCB86005461AE /* PJSelectCityVc.m */; };
+		24219D87198BD1B0005461AE /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D86198BD1B0005461AE /* UIAlertView+Block.m */; };
+		24957996198D3BAA008E01AE /* PJShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24957995198D3BAA008E01AE /* PJShowListCell.m */; };
+		24957998198D3F6B008E01AE /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24957997198D3F6B008E01AE /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,30 @@
 		24219D51198BBCFF005461AE /* ShanghaiHLJTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShanghaiHLJTests-Info.plist"; sourceTree = "<group>"; };
 		24219D53198BBCFF005461AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24219D55198BBCFF005461AE /* ShanghaiHLJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShanghaiHLJTests.m; sourceTree = "<group>"; };
+		24219D61198BBE38005461AE /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		24219D62198BBE38005461AE /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		24219D69198BBF37005461AE /* PJFirstPageVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJFirstPageVc.h; sourceTree = "<group>"; };
+		24219D6A198BBF37005461AE /* PJFirstPageVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJFirstPageVc.m; sourceTree = "<group>"; };
+		24219D6C198BBF58005461AE /* PJOrdersVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJOrdersVc.h; sourceTree = "<group>"; };
+		24219D6D198BBF58005461AE /* PJOrdersVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJOrdersVc.m; sourceTree = "<group>"; };
+		24219D6F198BBFF5005461AE /* PJMineVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJMineVc.h; sourceTree = "<group>"; };
+		24219D70198BBFF5005461AE /* PJMineVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJMineVc.m; sourceTree = "<group>"; };
+		24219D72198BC19B005461AE /* home_tab_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tab_home@2x.png"; sourceTree = "<group>"; };
+		24219D74198BC1B8005461AE /* home_tab_contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tab_contact@2x.png"; sourceTree = "<group>"; };
+		24219D76198BC1CD005461AE /* home_tab_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tab_profile@2x.png"; sourceTree = "<group>"; };
+		24219D78198BC4CA005461AE /* PJAppointmentVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJAppointmentVc.h; sourceTree = "<group>"; };
+		24219D79198BC4CA005461AE /* PJAppointmentVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJAppointmentVc.m; sourceTree = "<group>"; };
+		24219D7B198BC592005461AE /* PJShowListVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJShowListVc.h; sourceTree = "<group>"; };
+		24219D7C198BC592005461AE /* PJShowListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJShowListVc.m; sourceTree = "<group>"; };
+		24219D7F198BC8F9005461AE /* PJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJBaseViewController.h; sourceTree = "<group>"; };
+		24219D80198BC8F9005461AE /* PJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJBaseViewController.m; sourceTree = "<group>"; };
+		24219D82198BCB86005461AE /* PJSelectCityVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJSelectCityVc.h; sourceTree = "<group>"; };
+		24219D83198BCB86005461AE /* PJSelectCityVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJSelectCityVc.m; sourceTree = "<group>"; };
+		24219D85198BD1B0005461AE /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		24219D86198BD1B0005461AE /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		24957994198D3BAA008E01AE /* PJShowListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJShowListCell.h; sourceTree = "<group>"; };
+		24957995198D3BAA008E01AE /* PJShowListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJShowListCell.m; sourceTree = "<group>"; };
+		24957997198D3F6B008E01AE /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +115,8 @@
 		24219D24198BBCFF005461AE = {
 			isa = PBXGroup;
 			children = (
+				24219D5F198BBE0B005461AE /* Catalog */,
+				24219D60198BBE0B005461AE /* Resources */,
 				24219D36198BBCFF005461AE /* ShanghaiHLJ */,
 				24219D4F198BBCFF005461AE /* ShanghaiHLJTests */,
 				24219D2F198BBCFF005461AE /* Frameworks */,
@@ -107,10 +147,9 @@
 		24219D36198BBCFF005461AE /* ShanghaiHLJ */ = {
 			isa = PBXGroup;
 			children = (
-				24219D3F198BBCFF005461AE /* PJAppDelegate.h */,
-				24219D40198BBCFF005461AE /* PJAppDelegate.m */,
-				24219D42198BBCFF005461AE /* Images.xcassets */,
-				24219D37198BBCFF005461AE /* Supporting Files */,
+				24219D7E198BC8D7005461AE /* Publie */,
+				24219D65198BBE82005461AE /* Controller */,
+				24219D64198BBE57005461AE /* Main */,
 			);
 			path = ShanghaiHLJ;
 			sourceTree = "<group>";
@@ -142,6 +181,93 @@
 				24219D52198BBCFF005461AE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24219D5F198BBE0B005461AE /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				24219D85198BD1B0005461AE /* UIAlertView+Block.h */,
+				24219D86198BD1B0005461AE /* UIAlertView+Block.m */,
+				24219D61198BBE38005461AE /* UIView+Additions.m */,
+				24219D62198BBE38005461AE /* UIView+Additions.h */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		24219D60198BBE0B005461AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24957997198D3F6B008E01AE /* default.jpg */,
+				24219D76198BC1CD005461AE /* home_tab_profile@2x.png */,
+				24219D74198BC1B8005461AE /* home_tab_contact@2x.png */,
+				24219D72198BC19B005461AE /* home_tab_home@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24219D64198BBE57005461AE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				24219D3F198BBCFF005461AE /* PJAppDelegate.h */,
+				24219D40198BBCFF005461AE /* PJAppDelegate.m */,
+				24219D42198BBCFF005461AE /* Images.xcassets */,
+				24219D37198BBCFF005461AE /* Supporting Files */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		24219D65198BBE82005461AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24219D66198BBEA0005461AE /* FirstPage */,
+				24219D67198BBEB6005461AE /* Orders */,
+				24219D68198BBEC0005461AE /* Mine */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24219D66198BBEA0005461AE /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+				24219D69198BBF37005461AE /* PJFirstPageVc.h */,
+				24219D6A198BBF37005461AE /* PJFirstPageVc.m */,
+				24219D78198BC4CA005461AE /* PJAppointmentVc.h */,
+				24219D79198BC4CA005461AE /* PJAppointmentVc.m */,
+				24219D7B198BC592005461AE /* PJShowListVc.h */,
+				24219D7C198BC592005461AE /* PJShowListVc.m */,
+				24219D82198BCB86005461AE /* PJSelectCityVc.h */,
+				24219D83198BCB86005461AE /* PJSelectCityVc.m */,
+				24957994198D3BAA008E01AE /* PJShowListCell.h */,
+				24957995198D3BAA008E01AE /* PJShowListCell.m */,
+			);
+			name = FirstPage;
+			sourceTree = "<group>";
+		};
+		24219D67198BBEB6005461AE /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				24219D6C198BBF58005461AE /* PJOrdersVc.h */,
+				24219D6D198BBF58005461AE /* PJOrdersVc.m */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		24219D68198BBEC0005461AE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				24219D6F198BBFF5005461AE /* PJMineVc.h */,
+				24219D70198BBFF5005461AE /* PJMineVc.m */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		24219D7E198BC8D7005461AE /* Publie */ = {
+			isa = PBXGroup;
+			children = (
+				24219D7F198BC8F9005461AE /* PJBaseViewController.h */,
+				24219D80198BC8F9005461AE /* PJBaseViewController.m */,
+			);
+			name = Publie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24219D3B198BBCFF005461AE /* InfoPlist.strings in Resources */,
+				24219D73198BC19B005461AE /* home_tab_home@2x.png in Resources */,
+				24219D75198BC1B8005461AE /* home_tab_contact@2x.png in Resources */,
+				24219D77198BC1CD005461AE /* home_tab_profile@2x.png in Resources */,
 				24219D43198BBCFF005461AE /* Images.xcassets in Resources */,
+				24957998198D3F6B008E01AE /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +370,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24219D7A198BC4CA005461AE /* PJAppointmentVc.m in Sources */,
+				24219D7D198BC592005461AE /* PJShowListVc.m in Sources */,
+				24219D63198BBE38005461AE /* UIView+Additions.m in Sources */,
+				24219D71198BBFF5005461AE /* PJMineVc.m in Sources */,
+				24219D6E198BBF58005461AE /* PJOrdersVc.m in Sources */,
+				24219D84198BCB86005461AE /* PJSelectCityVc.m in Sources */,
+				24219D87198BD1B0005461AE /* UIAlertView+Block.m in Sources */,
 				24219D41198BBCFF005461AE /* PJAppDelegate.m in Sources */,
+				24219D6B198BBF37005461AE /* PJFirstPageVc.m in Sources */,
+				24219D81198BC8F9005461AE /* PJBaseViewController.m in Sources */,
+				24957996198D3BAA008E01AE /* PJShowListCell.m in Sources */,
 				24219D3D198BBCFF005461AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +578,7 @@
 				24219D5B198BBCFF005461AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24219D5C198BBCFF005461AE /* Build configuration list for PBXNativeTarget "ShanghaiHLJTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +587,7 @@
 				24219D5E198BBCFF005461AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
