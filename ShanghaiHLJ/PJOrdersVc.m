@@ -9,6 +9,10 @@
 #import "PJOrdersVc.h"
 
 @interface PJOrdersVc ()
+{
+    NSArray *_sourceArr;
+    UITableView *_sourceTable;
+}
 
 @end
 
@@ -26,7 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"我的订单";
     // Do any additional setup after loading the view.
 }
 

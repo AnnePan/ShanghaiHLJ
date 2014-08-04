@@ -31,11 +31,19 @@
     
     NSArray *itemArr = @[@{@"view":homeView,@"image":@"home_tab_home",@"title":@"首页"},
                          @{@"view":orderView,@"image":@"home_tab_contact",@"title":@"订单"},
-                         @{@"view":mineView,@"image":@"home_tab_profile",@"title":@"我的"}];
+                         @{@"view":mineView,@"image":@"home_tab_profile",@"title":@"我的"},
+                         @{@"view":@"",@"image":@"profile_icon_tel",@"title":@"客服"}];
     NSMutableArray *itemNvcArr = [NSMutableArray arrayWithCapacity:4];
     
     for (int i = 0; i < itemArr.count; i++) {
-        UINavigationController *itemNvc = [[UINavigationController alloc] initWithRootViewController:itemArr[i][@"view"]];
+        UINavigationController *itemNvc;
+        if ([itemArr[i][@"view"] isKindOfClass:PJBaseViewController.class]) {
+            itemNvc = [[UINavigationController alloc] initWithRootViewController:itemArr[i][@"view"]];
+            ((PJBaseViewController *)itemArr[i][@"view"]).vcTitle = itemArr[i][@"title"];
+        } else {
+            itemNvc = [[UINavigationController alloc] initWithRootViewController:nil];
+            itemNvc.tabBarItem.tag = 10;
+        }
         itemNvc.tabBarItem.image = [UIImage imageNamed:itemArr[i][@"image"]];
         itemNvc.tabBarItem.title = itemArr[i][@"title"];
         [itemNvcArr addObject:itemNvc];
@@ -44,7 +52,21 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = itemNvcArr;
     tabBarController.tabBar.tintColor = [UIColor orangeColor];
+    tabBarController.delegate = self;
     self.window.rootViewController = tabBarController;
+}
+
+#pragma mark - UITabBarControllerDelegate
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    if(viewController.tabBarItem.tag == 10){
+        
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"客服时间：9:00-22:00" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"呼叫" otherButtonTitles:nil, nil];
+        [sheet showInView:self.window];
+        
+        return NO;
+    }
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

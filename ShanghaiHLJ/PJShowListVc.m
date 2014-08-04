@@ -7,7 +7,7 @@
 //
 
 #import "PJShowListVc.h"
-#import "PJShowListCell.h"
+#import "PJShowListWorksCell.h"
 
 @interface PJShowListVc ()<UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource>
 {
@@ -49,7 +49,7 @@
     _worksSourceCollection.backgroundColor = [UIColor whiteColor];
     _worksSourceCollection.delegate = self;
     _worksSourceCollection.dataSource = self;
-    [_worksSourceCollection registerClass:PJShowListCell.class forCellWithReuseIdentifier:NSStringFromClass(self.class)];
+    [_worksSourceCollection registerClass:PJShowListWorksCell.class forCellWithReuseIdentifier:NSStringFromClass(self.class)];
     _worksSourceCollection.hidden = YES;
     [self.view addSubview:_worksSourceCollection];
     
@@ -111,7 +111,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    PJShowListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class) forIndexPath:indexPath];
+    PJShowListWorksCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self.class) forIndexPath:indexPath];
 //    cell.backgroundColor = [UIColor redColor];
     [cell setItem:_worksSourceArr[indexPath.row]];
     return cell;

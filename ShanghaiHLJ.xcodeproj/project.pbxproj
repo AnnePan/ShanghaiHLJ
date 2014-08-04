@@ -31,8 +31,11 @@
 		24219D81198BC8F9005461AE /* PJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D80198BC8F9005461AE /* PJBaseViewController.m */; };
 		24219D84198BCB86005461AE /* PJSelectCityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D83198BCB86005461AE /* PJSelectCityVc.m */; };
 		24219D87198BD1B0005461AE /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 24219D86198BD1B0005461AE /* UIAlertView+Block.m */; };
-		24957996198D3BAA008E01AE /* PJShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24957995198D3BAA008E01AE /* PJShowListCell.m */; };
+		24957996198D3BAA008E01AE /* PJShowListWorksCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24957995198D3BAA008E01AE /* PJShowListWorksCell.m */; };
 		24957998198D3F6B008E01AE /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24957997198D3F6B008E01AE /* default.jpg */; };
+		24C64AC7198FCA5C00086005 /* profile_icon_tel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C64AC6198FCA5C00086005 /* profile_icon_tel@2x.png */; };
+		24C64ACA198FDCD900086005 /* PJMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C64AC9198FDCD900086005 /* PJMineCell.m */; };
+		24C64ACD198FDE1600086005 /* PJShowListWorkerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C64ACC198FDE1600086005 /* PJShowListWorkerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +86,14 @@
 		24219D83198BCB86005461AE /* PJSelectCityVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJSelectCityVc.m; sourceTree = "<group>"; };
 		24219D85198BD1B0005461AE /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		24219D86198BD1B0005461AE /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
-		24957994198D3BAA008E01AE /* PJShowListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJShowListCell.h; sourceTree = "<group>"; };
-		24957995198D3BAA008E01AE /* PJShowListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJShowListCell.m; sourceTree = "<group>"; };
+		24957994198D3BAA008E01AE /* PJShowListWorksCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJShowListWorksCell.h; sourceTree = "<group>"; };
+		24957995198D3BAA008E01AE /* PJShowListWorksCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJShowListWorksCell.m; sourceTree = "<group>"; };
 		24957997198D3F6B008E01AE /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		24C64AC6198FCA5C00086005 /* profile_icon_tel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_icon_tel@2x.png"; sourceTree = "<group>"; };
+		24C64AC8198FDCD900086005 /* PJMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJMineCell.h; sourceTree = "<group>"; };
+		24C64AC9198FDCD900086005 /* PJMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJMineCell.m; sourceTree = "<group>"; };
+		24C64ACB198FDE1600086005 /* PJShowListWorkerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJShowListWorkerCell.h; sourceTree = "<group>"; };
+		24C64ACC198FDE1600086005 /* PJShowListWorkerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJShowListWorkerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 		24219D60198BBE0B005461AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				24C64AC6198FCA5C00086005 /* profile_icon_tel@2x.png */,
 				24957997198D3F6B008E01AE /* default.jpg */,
 				24219D76198BC1CD005461AE /* home_tab_profile@2x.png */,
 				24219D74198BC1B8005461AE /* home_tab_contact@2x.png */,
@@ -237,8 +246,10 @@
 				24219D7C198BC592005461AE /* PJShowListVc.m */,
 				24219D82198BCB86005461AE /* PJSelectCityVc.h */,
 				24219D83198BCB86005461AE /* PJSelectCityVc.m */,
-				24957994198D3BAA008E01AE /* PJShowListCell.h */,
-				24957995198D3BAA008E01AE /* PJShowListCell.m */,
+				24957994198D3BAA008E01AE /* PJShowListWorksCell.h */,
+				24957995198D3BAA008E01AE /* PJShowListWorksCell.m */,
+				24C64ACB198FDE1600086005 /* PJShowListWorkerCell.h */,
+				24C64ACC198FDE1600086005 /* PJShowListWorkerCell.m */,
 			);
 			name = FirstPage;
 			sourceTree = "<group>";
@@ -257,6 +268,8 @@
 			children = (
 				24219D6F198BBFF5005461AE /* PJMineVc.h */,
 				24219D70198BBFF5005461AE /* PJMineVc.m */,
+				24C64AC8198FDCD900086005 /* PJMineCell.h */,
+				24C64AC9198FDCD900086005 /* PJMineCell.m */,
 			);
 			name = Mine;
 			sourceTree = "<group>";
@@ -350,6 +363,7 @@
 				24219D73198BC19B005461AE /* home_tab_home@2x.png in Resources */,
 				24219D75198BC1B8005461AE /* home_tab_contact@2x.png in Resources */,
 				24219D77198BC1CD005461AE /* home_tab_profile@2x.png in Resources */,
+				24C64AC7198FCA5C00086005 /* profile_icon_tel@2x.png in Resources */,
 				24219D43198BBCFF005461AE /* Images.xcassets in Resources */,
 				24957998198D3F6B008E01AE /* default.jpg in Resources */,
 			);
@@ -374,13 +388,15 @@
 				24219D7D198BC592005461AE /* PJShowListVc.m in Sources */,
 				24219D63198BBE38005461AE /* UIView+Additions.m in Sources */,
 				24219D71198BBFF5005461AE /* PJMineVc.m in Sources */,
+				24C64ACA198FDCD900086005 /* PJMineCell.m in Sources */,
 				24219D6E198BBF58005461AE /* PJOrdersVc.m in Sources */,
+				24C64ACD198FDE1600086005 /* PJShowListWorkerCell.m in Sources */,
 				24219D84198BCB86005461AE /* PJSelectCityVc.m in Sources */,
 				24219D87198BD1B0005461AE /* UIAlertView+Block.m in Sources */,
 				24219D41198BBCFF005461AE /* PJAppDelegate.m in Sources */,
 				24219D6B198BBF37005461AE /* PJFirstPageVc.m in Sources */,
 				24219D81198BC8F9005461AE /* PJBaseViewController.m in Sources */,
-				24957996198D3BAA008E01AE /* PJShowListCell.m in Sources */,
+				24957996198D3BAA008E01AE /* PJShowListWorksCell.m in Sources */,
 				24219D3D198BBCFF005461AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

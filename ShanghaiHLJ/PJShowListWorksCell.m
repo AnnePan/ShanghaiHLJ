@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 com.pa. All rights reserved.
 //
 
-#import "PJShowListCell.h"
+#import "PJShowListWorksCell.h"
 
-@interface PJShowListCell ()
+@interface PJShowListWorksCell ()
 {
     UIImageView *_worksImgV;
     UIView *_worksView;
@@ -17,7 +17,7 @@
 }
 @end
 
-@implementation PJShowListCell
+@implementation PJShowListWorksCell
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -25,7 +25,7 @@
     if (self) {
         _worksImgV = [[UIImageView alloc] initWithFrame:self.bounds];
         _worksImgV.layer.masksToBounds = YES;
-        _worksImgV.layer.repeatCount = 10;
+        _worksImgV.layer.cornerRadius = 10;
         [self addSubview:_worksImgV];
         
         _worksView = [[UIView alloc] initWithFrame:self.bounds];

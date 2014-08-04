@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PJMineVc : UIViewController
+@interface PJMineVc : PJBaseViewController
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PJShowListCell : UICollectionViewCell
+@interface PJShowListWorksCell : UICollectionViewCell
 
 - (void)setItem:(NSDictionary *)item;
 

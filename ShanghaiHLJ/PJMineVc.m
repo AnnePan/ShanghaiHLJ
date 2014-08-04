@@ -8,17 +8,20 @@
 
 #import "PJMineVc.h"
 
-@interface PJMineVc ()
+@interface PJMineVc ()<UITableViewDataSource, UITableViewDelegate>
+{
+    NSArray *_sourceArr;
+    UITableView *_sourceTable;
+}
 
 @end
 
 @implementation PJMineVc
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init]) {
+        _sourceArr = @[@{},@{},@{},@{}];
     }
     return self;
 }
@@ -26,24 +29,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"个人中心";
+    
+    _sourceTable = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _sourceTable.delegate = self;
+    _sourceTable.dataSource = self;
+    _sourceTable.tableFooterView = [UIView new];
+    _sourceTable.bounces = NO;
+    [self.view addSubview:_sourceTable];
+    
+    UIView *headerV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 120)];
+    headerV.backgroundColor = [UIColor redColor];
+    _sourceTable.tableHeaderView = headerV;
+    
+    UIButton *userImgBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    userImgBtn.backgroundColor = [UIColor yellowColor];
+    userImgBtn.layer.masksToBounds = YES;
+    userImgBtn.layer.cornerRadius = userImgBtn.width / 2;
+    [headerV addSubview:userImgBtn];
+    
+    UILabel *userNameLab = [[UILabel alloc] initWithFrame:CGRectZero];
+    userNameLab.textColor = [UIColor yellowColor];
+    userNameLab.backgroundColor = [UIColor clearColor];
+    userNameLab.font = [UIFont systemFontOfSize:20];
+    userNameLab.text = @"未填写昵称";
+    [userNameLab sizeToFit];
+    [headerV addSubview:userNameLab];
+    
+    //位置
+    userNameLab.centerX = userImgBtn.centerX = headerV.centerX;
+    userNameLab.bottom = headerV.bottom - 10;
+    userImgBtn.top = headerV.top + 15;
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - UITableViewDataSource, UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _sourceArr.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(self.class)];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(self.class)];
+    }
+    cell.textLabel.text = @"1234";
+    return cell;
 }
-*/
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C283D12D-B9A8-4A32-9E64-38040797B976</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShanghaiHLJ</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F289E145-6A38-4DC9-8728-A8A606E0AF99</key>
+		<string>https://github.com/AnnePan/ShanghaiHLJ.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShanghaiHLJ.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F289E145-6A38-4DC9-8728-A8A606E0AF99</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AnnePan/ShanghaiHLJ.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F289E145-6A38-4DC9-8728-A8A606E0AF99</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F289E145-6A38-4DC9-8728-A8A606E0AF99</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShanghaiHLJ</string>
+		</dict>
+	</array>
+</dict>
+</plist>
